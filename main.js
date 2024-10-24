@@ -84,14 +84,12 @@ form.addEventListener("submit", (e) => {
     // Success Handling
     if (formSuccess) {
         successMessage.classList.add("show-success-message");
-        
-        // Clear the form fields (optional)
+
         form.reset();
 
-        // Set a timeout to remove the success message after 3 seconds
         setTimeout(() => {
             successMessage.classList.remove("show-success-message");
-        }, 3000); // Adjust time as needed
+        }, 3000); 
     }
 });
 
